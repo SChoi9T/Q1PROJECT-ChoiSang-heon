@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="webimage.png" type="images">
 	<title> Q1 Project: Tech Haven Inc. </title>
 
 	<!-- FONTS -->
@@ -27,6 +26,16 @@
 
 		hr {
 			border: 5px solid #8F8073;
+		}
+
+		fieldset {
+			margin-left: 400px;
+			margin-right: 400px;
+		}
+
+		legend {
+			font-size: 35px;
+			margin-bottom: 20px;
 		}
 
 		.navbar {
@@ -139,8 +148,13 @@
 			padding: 30px;
 		}
 
+		.new-releases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
 		.new-release-card img {
-            width: 10%;
+			width: 65%;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 			transition: transform 0.3s, box-shadow 0.3s;
@@ -150,13 +164,37 @@
         	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
         }
 
-        .signup-form button {
-        	padding-left: 10px;
-			padding-right: 10px;
+        .new-release-card button {
+        	padding-left: 30px;
+			padding-right: 30px;
 			margin-top: 10px;
 			border-radius: 10px;
 			font-size: 15px;
 			font-family:"Afacad Flux", sans-serif;
+        }
+
+        .new-release-card button:hover {
+        	transition: 0.3s;
+        	background-color: #E6E6E6;
+        }
+
+        .signup-form input {
+        	font-family:"Afacad Flux", sans-serif;
+        }
+
+        .signup-form button {
+        	padding-left: 70px;
+			padding-right: 70px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			font-size: 15px;
+			font-family:"Afacad Flux", sans-serif;
+        }
+
+        .signup-form button:hover {
+        	transition: 0.3s;
+        	background-color: #E6E6E6;
         }
 
 		.footer {
@@ -223,29 +261,47 @@
 	<!-- SEC 4: NEW ITEMS -->
 		<h1> New Releases!🔥 </h1>
 		<div class="new-releases" id="NewReleases">
-			<div class="new-release-card">
-					<img src="https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/geo/Apple-iPhone-16-hero-geo-240909_inline.jpg.large.jpg" alt="New-release-item1">
-					<p> Iphone 16 Max Pro </p>
+			<div class="new-releases-grid">
+				<div class="new-release-card">
+					<img src="https://www.istore.co.za/media/catalog/product/cache/4ebc814e413626645aa42e369230a31f/i/p/iphone_16_pro_max_desert_titanium_pdp_image_position_1__gben_2.png">
+					<p> Iphone 16 Pro Max </p>
 					<p> 32,000 PHP </p>
-					<button> Buy 🛒! </button>
+					<button> Buy! 🛒 </button>
+				</div>
+				<div class="new-release-card">
+					<img src="https://openbox.ca/cdn/shop/files/12_5e05de6d-b348-4b5c-b138-ca2f72f51269_800x.jpg?v=1708987967" alt="New-release-item2">
+					<p> Samsung Galaxy S24 Ultra </p>
+					<p> 33,000 PHP </p>
+					<button> Buy! 🛒 </button>
+				</div>
+				<div class="new-release-card">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/71pzgRR2FwL.jpg" alt="New-release-item3">
+					<p> Dell XPS 8960 Desktop </p>
+					<p> 35,000 PHP </p>
+					<button> Buy! 🛒 </button>
+				</div>
 			</div>
 	</div>
 	<hr/>
 	<br/>
 	<!-- SEC 5: SIGNUP FORM -->
 	<div class="signup-form" id="Signup">
-		<form>
-			<h2>Sign-up</h2>
+		<fieldset>
+			<legend>Sign-up</legend>
+			<form>
 				<label>Username: </label><br/>
 				<input type="Text"><br/>
 				<label>Password: </label><br/>
 				<input type="Password"><br/>
-				<button style="background-color: white; color: black;" class="button">Login</button>
-		</form>	
+				<button> Login </button>
+			</form>	
+		</fieldset>
 	</div>
 	<!-- FOOTER -->
 	<div class="footer">
 		<h2> Sang-heon G. Choi | 9-Topaz </h2>
+		<br/>
+		<h4> Copyright 2024-2024 by OBMC. All Rights Reserved.
 	</div>
 </body>
 </html>
