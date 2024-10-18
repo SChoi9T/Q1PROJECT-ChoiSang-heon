@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="webimage.png" type="images">
+	<title> Q1 Project: Tech Haven Inc. </title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<style>
+	 	*{
+	 		text-decoration: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			background-color: #EAE6E5;
+			text-align: center;
+			font-family:"Afacad Flux", sans-serif;
+		}
+
+		hr {
+			border: 5px solid #8F8073;
+		}
+
+		.navbar {
+			background-color: #12130F;
+			padding-right : 15px;
+			padding-left: 15px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			position: sticky;
+			top: 0;
+		}
+
+		.navdiv {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.logo p {
+			font-size: 35px;
+			font-weight: bold;
+			color: limegreen;
+		}
+
+
+		li {
+			list-style: none;
+			display: inline-block;
+		}
+
+		li a {
+			color: #8FCB9B;
+			font-size: 20px;
+			font-weight: bold;
+			margin-right: 15px;
+		}
+
+		li:hover {
+			transition: 0.3s;
+			background-color: #2E3026;
+		}
+
+		.navbar button {
+			background-color: #5B9279;
+			margin-left: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			width: 150px;
+		}
+
+		.navbar button a {
+			color: #FFFFFF;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		.navbar button:hover {
+			transition: 0.3s;
+			background-color: #6CAD90;
+		}
+
+		.hero {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://dlcdnwebimgs.asus.com/files/media/253f6b4d-ce25-49e5-806a-95f797354452/v1/assets/image/proart/article_cover.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 300px;
+			font-size: 24px;
+			color: #FFFFFF;
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		.hero p {
+			margin-top: 10px;
+			margin-left: 200px;
+			margin-right: 200px;
+		}
+
+		.search input{
+			padding-left: 10px;
+			padding-right: 20px;
+			margin-right: 10px;
+			border-radius: 10px;
+			font-size: 20px;
+			font-family:"Afacad Flux", sans-serif;
+		}
+
+		.bestseller {
+			padding: 30px;
+		}
+
+		.bestseller-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .bestseller-card img {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+			transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .bestseller-card img:hover {
+        	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+        }
+
+		.new-releases {
+			padding: 30px;
+		}
+
+		.new-release-card img {
+            width: 10%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+			transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .new-release-card img:hover {
+        	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+        }
+
+        .signup-form button {
+        	padding-left: 10px;
+			padding-right: 10px;
+			margin-top: 10px;
+			border-radius: 10px;
+			font-size: 15px;
+			font-family:"Afacad Flux", sans-serif;
+        }
+
+		.footer {
+			margin-top: 30px;
+			text-align: center;
+			bottom: 0;
+			padding: 40px;
+			background-color: #5B9279;
+		}
+
+	 </style>
+</head>
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- SEC 1: NAV BAR -->
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><p> TECH HAVEN INC. </p>
+			</div>
+			<ul>
+  			<li><a href="#AboutUs">About us</a></li>
+  			<li><a href="#Bestseller"> Bestseller </a></li>
+  			<li><a href="#NewReleases"> New Releases </a></li>
+  			<button><a href="#Signup"> Signup | Login </a></button>
+			</ul>
+		</div>
+	</nav>
+	<!-- SEC 2: HERO -->
+	<div class="hero" id="AboutUs">
+		<h1> LAPTOPS, DESKTOPS, PHONES AND MORE </h1>
+		<p> We sell the latest tech out there for cheaper prices! </p>
+		<p> Our goal is to make technology more accessible to everyone. By choosing our products, you're not just buying tech; you're supporting a cause that helps bridge the digital divide. Join us in making technology easier for all. </p>
+		<br/>
+		<div class="search">
+		<input type="text" placeholder="Search items..."></input>
+		<button><i class="fa fa-search" style= "padding: 5px; font-size: 20px;"></i></button>
+		</div>
+	</div>
+	<hr/>
+	<br/>
+	<!-- SEC 3: BESTSELLER IMAGES -->
+		<h1> Bestseller Products! </h1>
+		<div class="bestseller" id="Bestseller">
+			<div class="bestseller-grid">
+				<div class="bestseller-card">
+					<img src="https://cdn.thewirecutter.com/wp-content/media/2024/05/windowsultrabooks-2048px-2585-1.jpg" alt="Bestseller1">
+					<p> Asus Zenbook 14 OLED (UM3406HA-WS74T) </p>
+					<p> 23,000 PHP </p>
+				</div>
+				<div class="bestseller-card">
+					<img src="https://cdn.thewirecutter.com/wp-content/media/2023/06/bestlaptops-2048px-9765.jpg?auto=webp&quality=75&width=980&dpr=2" alt="Bestseller2">
+					<p> Apple MacBook Air (M2, 2022, 13-inch) </p>
+					<p> 26,000 PHP </p>
+				</div>
+				<div class="bestseller-card">
+					<img src="https://cdn.thewirecutter.com/wp-content/media/2023/06/ultrabooks-2048px-0883.jpg" alt="Bestseller3">
+					<p> Framework Laptop 13 (Intel Core Ultra Series 1) </p>
+					<p> 29,000 PHP </p>
+				</div>
+			</div>
+	</div>
+	<hr/>
+	<br/>
+	<!-- SEC 4: NEW ITEMS -->
+		<h1> New Releases!🔥 </h1>
+		<div class="new-releases" id="NewReleases">
+			<div class="new-release-card">
+					<img src="https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/geo/Apple-iPhone-16-hero-geo-240909_inline.jpg.large.jpg" alt="New-release-item1">
+					<p> Iphone 16 Max Pro </p>
+					<p> 32,000 PHP </p>
+					<button> Buy 🛒! </button>
+			</div>
+	</div>
+	<hr/>
+	<br/>
+	<!-- SEC 5: SIGNUP FORM -->
+	<div class="signup-form" id="Signup">
+		<form>
+			<h2>Sign-up</h2>
+				<label>Username: </label><br/>
+				<input type="Text"><br/>
+				<label>Password: </label><br/>
+				<input type="Password"><br/>
+				<button style="background-color: white; color: black;" class="button">Login</button>
+		</form>	
+	</div>
+	<!-- FOOTER -->
+	<div class="footer">
+		<h2> Sang-heon G. Choi | 9-Topaz </h2>
+	</div>
+</body>
+</html>
